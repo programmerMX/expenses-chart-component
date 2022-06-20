@@ -8,5 +8,55 @@
 
     --light-weight: 400;
     --weight: 700;
+
+    --small-size: 1.4rem;
+    --medium-size: 1.6rem;
+    --medium2-size1: 1.8rem;
+    --big-size: 2rem;
+    --bigger-size: 2.4rem
 }
 
+/* Balance start */
+
+/* Balance end */
+
+/* Spending grafic start */
+
+.main--spending-grafic--section{
+    background-color: var(--Very-pale-orange);
+    border-radius: 10px;
+}
+
+.spending-grafic--title{
+    color: var(--Dark-brown);
+    font-size: var(--big-size);
+    font-weight: 700;
+    text-align: center;
+}
+
+.main--spending-grafic{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-column-gap: 10px;
+    height: 300px;
+}
+
+.spending-grafic--item{
+    display: flex;
+    flex-direction: column;
+}
+
+.spending-percentage{
+    background-color: var(--Soft-red);
+    height: 90%;
+}
+
+.spending-day{
+    text-align: center;
+}
+
+/* Spending grafic end */
+
+/* total month start */
+
+/* total month end */
