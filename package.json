@@ -1,0 +1,19 @@
+{
+  "name": "02-expenses-chart-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Expenses chart component coding challenge](./design/desktop-preview.jpg)",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programmerMX/expenses-chart-component.git"
+  },
+  "author": "Orlando Leyva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/programmerMX/expenses-chart-component/issues"
+  },
+  "homepage": "https://github.com/programmerMX/expenses-chart-component#readme"
+}
