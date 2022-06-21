@@ -20,6 +20,31 @@
 
 /* Balance start */
 
+.main--balance-section{
+    background-color: var(--Soft-red);
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.balance-section--item{
+    padding: 20px 20px;
+}
+
+.main--balance-title{
+    color: var(--Cream);
+    font-size: var(--small-size);
+    font-weight: 400;
+}
+
+.main--balance-total{
+    color: var(--Very-pale-orange);
+    font-size: var(--bigger-size);
+    font-weight: 700;
+}
+
 /* Balance end */
 
 /* Spending grafic start */
