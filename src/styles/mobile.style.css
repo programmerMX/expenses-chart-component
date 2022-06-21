@@ -104,6 +104,38 @@
     font-weight: var(--light-weight);
 }
 
+.main--total-moth-spending-container{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--Cream);
+}
+
+.main--total-moth-spending-container h6{
+    color: var(--Medium-brown);
+    font-size: var(--small-size);
+    font-weight: 400;
+}
+
+#total-month{
+    color: var(--Dark-brown);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.main--from-last-month{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.main--from-last-month-percentaje{
+    color: var(--Dark-brown);
+    font-size: var(--medium-size);
+    font-weight: 700;
+    text-align: right;
+}
+
 /* Test percentages */
 
 .spending-percentage-fri{
