@@ -22,7 +22,7 @@
 
 .main--balance-section{
     background-color: var(--Soft-red);
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
     display: flex;
@@ -76,6 +76,8 @@
     flex-direction: column;
     height: 100%;
     justify-content: flex-end;
+    cursor: pointer;
+    position: relative;
 }
 
 .spending-percentage{
@@ -93,7 +95,9 @@
 }
 
 .total-day-spending{
-    display: none;
+    /* display: none; */
+    transition: .3s;
+    opacity: 0; 
     text-align: center;
     background-color: var(--Dark-brown);
     color: var(--Very-pale-orange);
@@ -102,6 +106,12 @@
     margin-bottom: 10px;
     font-size: 1.1rem;
     font-weight: var(--light-weight);
+    position: absolute;
+}
+
+.total-day-spending--active{
+    transition: .5s;
+    opacity: 10;
 }
 
 .main--total-moth-spending-container{
@@ -136,10 +146,12 @@
     text-align: right;
 }
 
+
+
 /* Test percentages */
 
-.spending-percentage-fri{
-    height: 10%;
+/* .spending-percentage-fri{
+    height: 10.45%;
 }
 
 .spending-percentage-sat{
@@ -148,10 +160,52 @@
 
 .spending-percentage-sun{
     height: 23%;
-}
+} */
+
+
 
 /* Spending grafic end */
+
 
 /* total month start */
 
 /* total month end */
+
+.attribution{
+    width: 90%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+@keyframes Total-spending{
+    50%{
+        opacity: 7;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+
+@media screen and (min-width: 885px) {
+    .total-day-spending{
+        /* display: none; */
+        transition: .3s;
+        opacity: 0;
+        text-align: center;
+        background-color: var(--Dark-brown);
+        color: var(--Very-pale-orange);
+        padding: 5px 5px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+        font-weight: var(--light-weight);
+    }
+    
+    .total-day-spending--active{
+        transition: .5s;
+        opacity: 10;
+    }
+}
