@@ -1,27 +1,30 @@
 import { setColor, setPercentage, setTotalDay } from "./utilities/setValues.mjs";
 
-const daysSpensings = document.querySelectorAll('.spending-grafic--item');
+const daysSpendings = document.querySelectorAll('.spending-grafic--item');
+const totalDay = document.querySelectorAll('.total-day-spending');
 
-daysSpensings.forEach(item=>{
+daysSpendings.forEach(item=>{
     item.addEventListener('mouseover', ()=>{
-        const totalDaySending = item.firstElementChild;
+        const totalDaySendingParent = item.firstElementChild;
+        const totalDaySending = totalDaySendingParent.firstElementChild;
+        
         totalDaySending.classList.add('total-day-spending--active');
 
-        const totalDayGrafic = totalDaySending.nextElementSibling;
+        const totalDayGrafic = totalDaySending.parentElement;
         totalDayGrafic.style.opacity  = '.8'
     })
 
     item.addEventListener('mouseout', ()=>{
-        const totalDaySending = item.firstElementChild;
+        const totalDaySendingParent = item.firstElementChild;
+        const totalDaySending = totalDaySendingParent.firstElementChild;
         totalDaySending.classList.remove('total-day-spending--active');
         
-        const totalDayGrafic = totalDaySending.nextElementSibling;
+        const totalDayGrafic = totalDaySending.parentElement;
         totalDayGrafic.style.opacity  = ''
     })
 })
 
 const spendingPercentages = document.querySelectorAll('.spending-percentage');
-const totalDay = document.querySelectorAll('.total-day-spending');
 
 totalDay.forEach(item=>{
   setTotalDay(item)
@@ -31,3 +34,7 @@ spendingPercentages.forEach(item=>{
   setPercentage(item);
   setColor(item)
 })
+
+
+//TODO: hacer merge a la rama master.
+//TODO: ajustar el tamaño de las graficas.

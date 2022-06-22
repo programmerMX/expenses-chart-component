@@ -29,7 +29,9 @@ export const setPercentage = (node)=>{
 }
 
 export const setTotalDay = (node)=>{
-    const day = node.parentElement.lastElementChild.textContent.toLocaleLowerCase();
+    const spendingPercentage = node.parentElement;
+    const day = spendingPercentage.parentElement.lastElementChild.textContent.toLocaleLowerCase();
+    
     const total = getSpending(day);
 
     node.textContent = `$${total}`

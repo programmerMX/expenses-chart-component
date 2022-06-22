@@ -77,13 +77,13 @@
     height: 100%;
     justify-content: flex-end;
     cursor: pointer;
-    position: relative;
 }
 
 .spending-percentage{
     background-color: var(--Soft-red);
     height: 90%;
     border-radius: 5px;
+    position: relative;
 }
 
 .spending-day{
@@ -107,6 +107,7 @@
     font-size: 1.1rem;
     font-weight: var(--light-weight);
     position: absolute;
+    top: -30px;
 }
 
 .total-day-spending--active{
@@ -150,7 +151,7 @@
 
 /* Test percentages */
 
-/* .spending-percentage-fri{
+ .spending-percentage-fri{
     height: 10.45%;
 }
 
@@ -160,7 +161,7 @@
 
 .spending-percentage-sun{
     height: 23%;
-} */
+} 
 
 
 
