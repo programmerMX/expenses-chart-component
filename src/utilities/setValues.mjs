@@ -1,4 +1,4 @@
-import { getPercentage, getSpending, getTotal } from "../services/spendings.service.mjs"
+import { getPercentage, getSpending, getWeekTotal } from "../services/spendings.service.mjs"
 
 const getDay = ()=>{
     const date = new Date();
@@ -20,12 +20,12 @@ const getDay = ()=>{
 }
 
 export const setPercentage = (node)=>{
-    const total = getTotal();
+    const total = getWeekTotal();
     const day = node.parentElement.lastElementChild.textContent.toLocaleLowerCase();
     const spending = getSpending(day);
     const percentage = getPercentage(total, spending)
 
-    node.style.height = `${100 - percentage}%`
+    node.style.height = `${percentage * 4}%`
 }
 
 export const setTotalDay = (node)=>{
@@ -46,3 +46,6 @@ export const setColor = (node)=>{
     }
 }
 
+export const setMonthTotal = (node)=>{
+    node.textContent = `$${getWeekTotal()}`
+}

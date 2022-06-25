@@ -29,7 +29,7 @@ const spendingsData = [
     }
   ]
 
-export const getTotal = ()=>{
+export const getWeekTotal = ()=>{
     return spendingsData.reduce((accum, current)=> accum + current.amount, 0);
 }
 
